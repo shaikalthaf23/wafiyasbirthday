@@ -1,0 +1,182 @@
+<html>
+
+<head>
+    <title>Happy Birthday</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/cake-blow.css">
+</head>
+
+<body>
+    <!-- Glowing stars -->
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+
+    <!-- Background fireworks -->
+    <div class="firework-bg" style="top: 8%; left: 12%; animation-delay: 0s;"></div>
+    <div class="firework-bg" style="top: 15%; left: 25%; animation-delay: 0.2s;"></div>
+    <div class="firework-bg" style="top: 22%; left: 38%; animation-delay: 0.4s;"></div>
+    <div class="firework-bg" style="top: 10%; left: 65%; animation-delay: 0.1s;"></div>
+    <div class="firework-bg" style="top: 18%; left: 78%; animation-delay: 0.3s;"></div>
+    <div class="firework-bg" style="top: 28%; left: 55%; animation-delay: 0.5s;"></div>
+    <div class="firework-bg" style="top: 35%; left: 8%; animation-delay: 0.15s;"></div>
+    <div class="firework-bg" style="top: 42%; left: 42%; animation-delay: 0.35s;"></div>
+    <div class="firework-bg" style="top: 50%; left: 72%; animation-delay: 0.45s;"></div>
+    <div class="firework-bg" style="top: 12%; left: 88%; animation-delay: 0.25s;"></div>
+    <div class="firework-bg" style="top: 38%; left: 18%; animation-delay: 0.4s;"></div>
+    <div class="firework-bg" style="top: 45%; left: 62%; animation-delay: 0.1s;"></div>
+    <div class="firework-bg" style="top: 20%; left: 48%; animation-delay: 0.5s;"></div>
+    <div class="firework-bg" style="top: 30%; left: 32%; animation-delay: 0.2s;"></div>
+    <div class="firework-bg" style="top: 55%; left: 85%; animation-delay: 0.3s;"></div>
+    <div class="firework-bg" style="top: 8%; left: 42%; animation-delay: 0.35s;"></div>
+    <div class="firework-bg" style="top: 48%; left: 15%; animation-delay: 0.45s;"></div>
+    <div class="firework-bg" style="top: 25%; left: 92%; animation-delay: 0.15s;"></div>
+    <div class="firework-bg" style="top: 52%; left: 35%; animation-delay: 0.4s;"></div>
+    <div class="firework-bg" style="top: 15%; left: 5%; animation-delay: 0.5s;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="loader">
+                <button id="play">Start</button>
+            </div>
+        </div>
+    </div>
+    <audio class="song" controls loop>
+        <source src="music.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <div class="music-control">
+        <button id="playMusicBtn" class="golden-btn">Play Music</button>
+        <div class="music-instruction">turn on music</div>
+    </div>
+    <canvas id="confetti"></canvas>
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="img/banner.png" alt="">
+                </div>
+
+                <div class="col-12  text-center">
+                    <div id="name" class="area">WAJEEHA WAFIYA</div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <div class="type-wrap">
+                        <div id="typed-strings" class="typing">
+                            <h2> <i id="nae">WAJEEHA WAFIYA!!!</i></h2>
+                            <h2>May Allah fill your life with Barakah,Peace nd Joy</h2>
+                            <h2>And bless you with goodness in this world and the Hereafter.</h2>
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-3 cake">
+                    <div class="cake-blow-container">
+                      <div class="candle-count-display">Candles on the Cake: <span id="candleCount">0</span></div>
+                      <div class="cake-blow">
+                        <div class="plate"></div>
+                        <div class="layer layer-bottom"></div>
+                        <div class="layer layer-middle"></div>
+                        <div class="layer layer-top"></div>
+                        <div class="icing">
+                          <div class="cherry cherry1"></div>
+                          <div class="cherry cherry2"></div>
+                          <div class="cherry cherry3"></div>
+                          <div class="cherry cherry4"></div>
+                          <div class="cherry cherry5"></div>
+                          <div class="cherry cherry6"></div>
+                          <div class="cherry cherry7"></div>
+                          <div class="cherry cherry8"></div>
+                          <div class="cherry cherry9"></div>
+                          <div class="cherry cherry10"></div>
+                          <div class="cherry cherry11"></div>
+                          <div class="cherry cherry12"></div>
+                          <div class="cherry cherry13"></div>
+                          <div class="cherry cherry14"></div>
+                          <div class="cherry cherry15"></div>
+                          <div class="cherry cherry16"></div>
+                          <div class="cherry cherry17"></div>
+                          <div class="cherry cherry18"></div>
+                          <div class="cherry cherry19"></div>
+                          <div class="cherry cherry20"></div>
+                          <div class="cherry cherry21"></div>
+                          <div class="cherry cherry22"></div>
+                          <div class="cherry cherry23"></div>
+                          <div class="cherry cherry24"></div>
+                          <div class="cherry cherry25"></div>
+                          <div class="sprinkle sprinkle1"></div>
+                          <div class="sprinkle sprinkle2"></div>
+                          <div class="sprinkle sprinkle3"></div>
+                        </div>
+                        <div class="drip drip1"></div>
+                        <div class="drip drip2"></div>
+                        <div class="drip drip3"></div>
+                      </div>
+                    </div>
+                    <div class="cake-instruction">Place 18 candles and blow it 🎂🎉</div>
+                </div>
+            </div>
+        </div>
+        <img src="img/Balloon-Border.png" width="100%" class="balloon-border">
+    </div>
+    <div class="message-overlay" id="messageOverlay"></div>
+</body>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/cake-blow.js"></script>
+<script src="js/script.js"></script>
+
+</html>
